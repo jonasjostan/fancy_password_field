@@ -15,7 +15,7 @@ abstract class ValidationRule {
 /// Validates that the value has at least one uppercase letter
 class UppercaseValidationRule extends ValidationRule {
   @override
-  String get name => 'Has uppercase letter';
+  String get name => 'Besitzt Großbuchstaben';
 
   @override
   bool validate(String value) {
@@ -26,7 +26,7 @@ class UppercaseValidationRule extends ValidationRule {
 /// Validates that the value has at least one lowercase letter
 class LowercaseValidationRule extends ValidationRule {
   @override
-  String get name => 'Has lowercase letter';
+  String get name => 'Besitzt kleinbuchstaben';
 
   @override
   bool validate(String value) {
@@ -37,7 +37,7 @@ class LowercaseValidationRule extends ValidationRule {
 /// Validates that the value has at least one digit
 class DigitValidationRule extends ValidationRule {
   @override
-  String get name => 'Has digit';
+  String get name => 'Besitzt Ziffern [0-9]';
 
   @override
   bool validate(String value) {
@@ -48,7 +48,7 @@ class DigitValidationRule extends ValidationRule {
 /// Validates that the value has at least one special character
 class SpecialCharacterValidationRule extends ValidationRule {
   @override
-  String get name => 'Has special character';
+  String get name => 'Besitzt Sonderzeichen (!@#\$%^&*(),.?":{}|<> )';
 
   @override
   bool validate(String value) {
@@ -62,12 +62,12 @@ class SpecialCharacterValidationRule extends ValidationRule {
 class MinCharactersValidationRule extends ValidationRule {
   MinCharactersValidationRule(this._numberOfCharacters)
       : assert(_numberOfCharacters > 0,
-            'numberOfCharacters must be greater than 0');
+            'Anzahl der Zeichen muss größer 0 sein');
 
   final int _numberOfCharacters;
 
   @override
-  String get name => 'Min of $_numberOfCharacters characters';
+  String get name => 'Mindestes $_numberOfCharacters Zeichen';
 
   @override
   bool validate(String value) {
@@ -86,7 +86,7 @@ class MaxCharactersValidationRule extends ValidationRule {
   final int _numberOfCharacters;
 
   @override
-  String get name => 'Max of $_numberOfCharacters characters';
+  String get name => 'Maximal $_numberOfCharacters Zeichen';
 
   @override
   bool validate(String value) {
@@ -113,7 +113,7 @@ class MinAndMaxCharactersValidationRule extends ValidationRule {
   final int _max;
 
   @override
-  String get name => 'Min $_min and Max $_max characters';
+  String get name => 'Min $_min und Max $_max Zeichen';
 
   @override
   bool validate(String value) {

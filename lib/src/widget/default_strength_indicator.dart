@@ -35,13 +35,13 @@ class DefaultStrengthIndicator extends StatelessWidget {
 
   String _getPasswordStrengthLabel() {
     if (_strength < .25) {
-      return 'Weak';
+      return 'Schwach';
     } else if (_strength < .5) {
       return 'Fair';
     } else if (_strength < .75) {
-      return 'Good';
+      return 'Gut';
     }
-    return 'Strong';
+    return 'Stark';
   }
 
   Color _getPasswordStrengthColor() {
