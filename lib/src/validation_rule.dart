@@ -15,7 +15,7 @@ abstract class ValidationRule {
 /// Validates that the value has at least one uppercase letter
 class UppercaseValidationRule extends ValidationRule {
   @override
-  String get name => 'Besitzt Großbuchstaben';
+  String get name => 'Großbuchstaben';
 
   @override
   bool validate(String value) {
@@ -26,7 +26,7 @@ class UppercaseValidationRule extends ValidationRule {
 /// Validates that the value has at least one lowercase letter
 class LowercaseValidationRule extends ValidationRule {
   @override
-  String get name => 'Besitzt kleinbuchstaben';
+  String get name => 'Kleinbuchstaben';
 
   @override
   bool validate(String value) {
@@ -37,7 +37,7 @@ class LowercaseValidationRule extends ValidationRule {
 /// Validates that the value has at least one digit
 class DigitValidationRule extends ValidationRule {
   @override
-  String get name => 'Besitzt Ziffern [0-9]';
+  String get name => 'Zahlen [0-9]';
 
   @override
   bool validate(String value) {
@@ -48,7 +48,7 @@ class DigitValidationRule extends ValidationRule {
 /// Validates that the value has at least one special character
 class SpecialCharacterValidationRule extends ValidationRule {
   @override
-  String get name => 'Besitzt Sonderzeichen (!@#\$%^&*(),.?":{}|<> )';
+  String get name => 'Sonderzeichen (!@#\$%^&*(),.?":{}|<> )';
 
   @override
   bool validate(String value) {
