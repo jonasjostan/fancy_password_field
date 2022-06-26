@@ -67,7 +67,7 @@ class MinCharactersValidationRule extends ValidationRule {
   final int _numberOfCharacters;
 
   @override
-  String get name => 'Mindestes $_numberOfCharacters Zeichen';
+  String get name => 'Mindestens $_numberOfCharacters Zeichen';
 
   @override
   bool validate(String value) {
