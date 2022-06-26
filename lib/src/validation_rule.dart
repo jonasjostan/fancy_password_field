@@ -37,7 +37,7 @@ class LowercaseValidationRule extends ValidationRule {
 /// Validates that the value has at least one digit
 class DigitValidationRule extends ValidationRule {
   @override
-  String get name => 'Zahlen [0-9]';
+  String get name => 'Zahlen ';
 
   @override
   bool validate(String value) {
@@ -48,7 +48,7 @@ class DigitValidationRule extends ValidationRule {
 /// Validates that the value has at least one special character
 class SpecialCharacterValidationRule extends ValidationRule {
   @override
-  String get name => 'Sonderzeichen (!@#\$%^&*(),.?":{}|<> )';
+  String get name => 'Sonderzeichen ';
 
   @override
   bool validate(String value) {
